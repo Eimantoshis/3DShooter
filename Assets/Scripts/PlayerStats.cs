@@ -14,19 +14,16 @@ public class PlayerStats : MonoBehaviour {
     void Start() {
         health = maxHealth;
         HealthChanged?.Invoke(this, new HealthChangedEventArgs(health));
-        Debug.Log(health);
     }
 
     // Update is called once per frame
     void Update() {
         TestDamage();
-        Debug.Log(health);
     }
 
     public void TakeDamage(float damage) {
         health -= damage;
         if (health <= 0) {
-            Debug.Log("DEAD");
             health = 0;
         }
         HealthChanged?.Invoke(this, new HealthChangedEventArgs(health));

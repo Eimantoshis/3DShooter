@@ -356,6 +356,7 @@
 "Assets/Scripts/PlayerCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerStats.cs"
+"Assets/UI/PlayerCrosshairUI.cs"
 "Assets/UI/PlayerHealthUI.cs"
 -langversion:9.0
 
