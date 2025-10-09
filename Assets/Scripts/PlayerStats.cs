@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour {
 
     
     [SerializeField] private float maxHealth = 100f;
-    public event EventHandler<HealthChangedEventArgs> HealthChanged;
+    public static event EventHandler<HealthChangedEventArgs> HealthChanged;
     
     private float health;
     // Start is called before the first frame update
@@ -18,7 +18,6 @@ public class PlayerStats : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        TestDamage();
     }
 
     public void TakeDamage(float damage) {
@@ -34,13 +33,6 @@ public class PlayerStats : MonoBehaviour {
         if (health > maxHealth) health = maxHealth;
         HealthChanged?.Invoke(this, new HealthChangedEventArgs(health));
     }
-
-    private void TestDamage() {
-        if (Input.GetButtonDown("Fire1")) {
-            TakeDamage(10f);
-        }
-    }
-    
     
     
 }

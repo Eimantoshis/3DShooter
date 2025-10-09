@@ -6,20 +6,13 @@ using UnityEngine;
 public class PlayerHealthUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI healthText;
-    private PlayerStats playerStats;
-    // Start is called before the first frame update
+    // Start is called before the frst frame update
     void Start() {
-        playerStats = GetComponentInParent<PlayerStats>();
-        if (!playerStats) Debug.LogError("PlayerStats not found");
-
-
-        playerStats.HealthChanged += OnHealthChanged;
+        PlayerStats.HealthChanged += OnHealthChanged;
     }
 
     private void OnDestroy() {
-        if (!playerStats) {
-            playerStats.HealthChanged -= OnHealthChanged;
-        }
+        PlayerStats.HealthChanged -= OnHealthChanged;
     }
 
     private void OnHealthChanged(object sender, HealthChangedEventArgs e) {

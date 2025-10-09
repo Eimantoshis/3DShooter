@@ -115,7 +115,6 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
--define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -355,7 +354,9 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/PlayerCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/PlayerShoot.cs"
 "Assets/Scripts/PlayerStats.cs"
+"Assets/UI/PlayerAmmoUI.cs"
 "Assets/UI/PlayerCrosshairUI.cs"
 "Assets/UI/PlayerHealthUI.cs"
 -langversion:9.0
