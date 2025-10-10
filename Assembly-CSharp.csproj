@@ -45,12 +45,11 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/PlayerSpawner.cs" />
      <Compile Include="Assets/Scripts/PlayerShoot.cs" />
-     <Compile Include="Assets/Scripts/Player.cs" />
      <Compile Include="Assets/UI/PlayerCrosshairUI.cs" />
      <Compile Include="Assets/UI/PlayerAmmoUI.cs" />
      <Compile Include="Assets/Scripts/PlayerCamera.cs" />
-     <Compile Include="Assets/Scripts/BasicSpawner.cs" />
      <Compile Include="Assets/UI/PlayerHealthUI.cs" />
      <Compile Include="Assets/Scripts/PlayerStats.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />

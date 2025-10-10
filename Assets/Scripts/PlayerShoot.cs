@@ -11,12 +11,10 @@ public class PlayerShoot : MonoBehaviour {
     public int maxBullets { get; private set; }
     public int CurrBullets { get; private set; }
     public float ReloadTime { get; set; }
-    [SerializeField] private Camera Playercamera; // where to shoot raycast from
+    private Camera playerCamera; // where to shoot raycast from
     private bool isReloading = false;
-    [SerializeField] private InputActionReference reloadInput;
     public static event EventHandler<AmmoChangedEventArgs> AmmoChanged;
     public static event EventHandler<ReloadEventArgs> Reload;
-    private InputAction shoot;
     // Start is called before the first frame update
     void Start() {
         maxBullets = 8;
@@ -24,47 +22,43 @@ public class PlayerShoot : MonoBehaviour {
         CurrBullets = maxBullets;
     }
 
-    private void OnEnable() {
-        shoot = new InputAction("Shoot", InputActionType.Button);
-        shoot.AddBinding("<Mouse>/leftButton");
-        shoot.started += Shoot;
-        shoot?.Enable();
-        reloadInput.action.started += ReloadInput;
+    public void SetCamera(Camera camera) {
+        playerCamera = camera;
     }
-    private void OnDisable() {
-        shoot.started -= Shoot;
-        reloadInput.action.started -= ReloadInput;
-    }
+    
 
-    private void Shoot(InputAction.CallbackContext context) {
+    private void Shoot() {
+        if (!playerCamera) return;
+        
         if (isReloading) return;
-        if (CurrBullets > 0) {
-            CurrBullets--;
-            AmmoChanged?.Invoke(this, new AmmoChangedEventArgs(CurrBullets));
-            if (Physics.Raycast(Playercamera.transform.position, Playercamera.transform.forward, out RaycastHit hit, Mathf.Infinity)) {
-                if (hit.collider.CompareTag("Player")) {
-                    Debug.Log("Hit player");
+        if (Input.GetMouseButtonDown(0)) {
+            if (CurrBullets > 0) {
+                CurrBullets--;
+                AmmoChanged?.Invoke(this, new AmmoChangedEventArgs(CurrBullets));
+                if (!playerCamera) Debug.Log("Camera needed");
+                if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, Mathf.Infinity)) {
+                    if (hit.collider.CompareTag("Player")) {
+                        Debug.Log("Hit player");
+                    }
                 }
+
             }
-
+            
         }
-
         if (CurrBullets <= 0) {
-            CallReload();
+            StartCoroutine(ReloadRoutine());
         }
-
-
         
     }
     
-    private void ReloadInput(InputAction.CallbackContext context) {
-        CallReload();
-    }
 
     private void CallReload() {
-        if (!isReloading) {
-            StartCoroutine(ReloadRoutine());
+        if (Input.GetKeyDown(KeyCode.R)) {
+            if (!isReloading) {
+                StartCoroutine(ReloadRoutine());
+            }
         }
+
     }
 
     private IEnumerator ReloadRoutine() {
@@ -84,8 +78,9 @@ public class PlayerShoot : MonoBehaviour {
     
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        Shoot();
+        CallReload();
     }
 }
 

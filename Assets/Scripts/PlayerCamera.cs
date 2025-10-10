@@ -1,48 +1,30 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerCamera : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private float mouseSensitivity = 50f;
+    public Transform Target;
+    public float MouseSensitivity = 10f;
 
-    private float xRotation = 0f;
-    private Vector2 mouseDelta;
-    private float lastMouseX;
+    private float verticalRotation;
+    private float horizontalRotation;
 
-    void Start()
+    void LateUpdate()
     {
-        if (!player) Debug.LogError("No player found");
-        transform.position = player.position;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
-    void Update()
-    {
-        if (Mouse.current != null)
+        if (Target == null)
         {
-            mouseDelta = Mouse.current.delta.ReadValue();
+            return;
         }
 
-        Rotation();
-    }
+        transform.position = Target.position;
 
-    private void Rotation()
-    {
-        float mouseX = mouseDelta.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = mouseDelta.y * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        verticalRotation -= mouseY * MouseSensitivity;
+        verticalRotation = Mathf.Clamp(verticalRotation, -70f, 70f);
 
-        lastMouseX = mouseX;
-        mouseDelta = Vector2.zero;
-    }
-    
-    public float GetMouseX()
-    {
-        return lastMouseX;
+        horizontalRotation += mouseX * MouseSensitivity;
+
+        transform.rotation = Quaternion.Euler(verticalRotation, horizontalRotation, 0);
     }
 }
