@@ -1,9 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+using Fusion;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
-public class PlayerMovement : MonoBehaviour
+public struct NetworkInputData : INetworkInput
+{
+    public Vector3 direction;
+    public NetworkBool jumpPressed;
+    public float mouseX;
+}
+
+public class PlayerMovement : NetworkBehaviour
 {
     [Header("Movement")]
     [SerializeField] private float speed = 25f;
@@ -27,53 +34,58 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded;
     
+    // Only used for local input
     [SerializeField] private InputActionReference move;
     [SerializeField] private InputActionReference jump;
     
+    [SerializeField] private PlayerCamera playerCamera;
     private Vector2 moveDir;
     private Vector3 currentVelocity;
+    
 
-    void Start()
+    public override void Spawned()
     {
         rb = GetComponent<Rigidbody>();
         col = GetComponent<CapsuleCollider>();
         currentVelocity = Vector3.zero;
     }
 
-    void Update()
+    public override void FixedUpdateNetwork()
     {
+        // Only move if we have authority over this object
+        if (!Object.HasStateAuthority) return;
+
+        if (GetInput(out NetworkInputData data))
+        {
+            // Apply movement based on network data
+            MoveWithNetworkInput(data.direction);
+            
+            // Handle jump input
+            if (data.jumpPressed && isGrounded)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            }
+        }
+        data.mouseX = playerCamera.GetMouseX();
+        RotatePlayer(Vector3.up * data.mouseX);
+        
         GroundCheck();
     }
-
-    void FixedUpdate()
+    
+    // This method is called for the local player to get movement direction
+    public Vector3 GetMovementDirection()
     {
-        Move();
-    }
-
-    private void OnEnable()
-    {
-        jump.action.started += Jump;
-    }
-
-    private void OnDisable()
-    {
-        jump.action.started -= Jump;
-    }
-
-    private void Jump(InputAction.CallbackContext context)
-    {
-        if (isGrounded)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-        }
-    }
-
-    private void Move()
-    {
-        moveDir = move.action.ReadValue<Vector2>();
+        if (move == null) return Vector3.zero;
         
-        // Calculate desired movement direction in world space
+        moveDir = move.action.ReadValue<Vector2>();
+        // Convert 2D input to 3D world direction
         Vector3 inputDir = (transform.right * moveDir.x + transform.forward * moveDir.y).normalized;
+        return inputDir;
+    }
+
+    // This method uses the networked input to move the player
+    private void MoveWithNetworkInput(Vector3 inputDir)
+    {
         Vector3 desiredVelocity = inputDir * speed;
         
         // Get current horizontal velocity
@@ -83,8 +95,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 velocityChange = desiredVelocity - currentHorizontalVel;
         
         // Determine if we're accelerating or decelerating/changing direction
-        bool isChangingDirection = moveDir.magnitude > 0.1f && Vector3.Dot(currentHorizontalVel.normalized, inputDir) < 0.3f;
-        bool isStopping = moveDir.magnitude < 0.1f;
+        bool isChangingDirection = inputDir.magnitude > 0.1f && Vector3.Dot(currentHorizontalVel.normalized, inputDir) < 0.3f;
+        bool isStopping = inputDir.magnitude < 0.1f;
         
         // Use different rates for acceleration vs direction changes/stopping
         float accelRate;
@@ -117,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 ResolveCollisions(Vector3 velocity)
     {
+        // Keep your existing collision resolution code
         if (velocity.magnitude < 0.001f)
             return velocity;
         
@@ -185,5 +198,9 @@ public class PlayerMovement : MonoBehaviour
     private void GroundCheck()
     {
         isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance, groundLayer);
+    }
+
+    public void RotatePlayer(Vector3 cameraRotation) {
+        transform.Rotate(cameraRotation);
     }
 }

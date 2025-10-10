@@ -8,24 +8,23 @@ public class PlayerCamera : MonoBehaviour
 
     private float xRotation = 0f;
     private Vector2 mouseDelta;
+    private float lastMouseX;
 
     void Start()
     {
         if (!player) Debug.LogError("No player found");
         transform.position = player.position;
-        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     void Update()
     {
-        // Get mouse input from new Input System
         if (Mouse.current != null)
         {
             mouseDelta = Mouse.current.delta.ReadValue();
         }
-        
+
         Rotation();
     }
 
@@ -36,10 +35,14 @@ public class PlayerCamera : MonoBehaviour
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        player.Rotate(Vector3.up * mouseX);
 
+        lastMouseX = mouseX;
         mouseDelta = Vector2.zero;
+    }
+    
+    public float GetMouseX()
+    {
+        return lastMouseX;
     }
 }

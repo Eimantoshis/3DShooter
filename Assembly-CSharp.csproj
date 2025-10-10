@@ -26,11 +26,11 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2022_3_8;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_8;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;FUSION_LOGLEVEL_INFO;FUSION_WEAVER;FUSION2;FUSION_2;FUSION_2_0;FUSION_2_0_7;FUSION_2_OR_NEWER;FUSION_2_0_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,19 +46,26 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/PlayerShoot.cs" />
+     <Compile Include="Assets/Scripts/Player.cs" />
      <Compile Include="Assets/UI/PlayerCrosshairUI.cs" />
      <Compile Include="Assets/UI/PlayerAmmoUI.cs" />
      <Compile Include="Assets/Scripts/PlayerCamera.cs" />
+     <Compile Include="Assets/Scripts/BasicSpawner.cs" />
      <Compile Include="Assets/UI/PlayerHealthUI.cs" />
      <Compile Include="Assets/Scripts/PlayerStats.cs" />
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/macOS" />
+     <None Include="Assets/Photon/Fusion/Plugins/NanoSockets/libnanosockets_LICENSE.txt" />
      <None Include="Library/PackageCache/com.unity.settings-manager@2.0.1/package.json" />
      <None Include="Library/PackageCache/com.unity.modules.subsystems@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Library/PackageCache/com.unity.modules.jsonserialize@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.test-framework@1.1.33" />
+     <None Include="Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.xml" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Metro/x86" />
      <None Include="Library/PackageCache/com.unity.modules.screencapture@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/WebGL" />
      <None Include="Library/PackageCache/com.unity.modules.cloth@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Library/PackageCache/com.unity.modules.imgui@1.0.0" />
@@ -66,6 +73,8 @@
      <None Include="Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.inputsystem@1.6.3/package.json" />
      <None Include="Library/PackageCache/com.unity.modules.ai@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/tvOS" />
+     <Folder Include="Assets/Photon" />
      <Folder Include="Library/PackageCache/com.unity.modules.animation@1.0.0" />
      <None Include="Library/PackageCache/com.unity.inputsystem@1.6.3/ValidationConfig.json" />
      <None Include="Library/PackageCache/com.unity.ugui@1.0.0/package.json" />
@@ -73,18 +82,23 @@
      <Folder Include="Assets/TextMesh Pro/Resources/Sprite Assets" />
      <Folder Include="Assets/Scripts" />
      <Folder Include="Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator" />
+     <None Include="Assets/Photon/Fusion/Assemblies/Fusion.Log.xml" />
      <None Include="Library/PackageCache/com.unity.ext.nunit@1.0.6/package.json" />
      <Folder Include="Library/PackageCache/com.unity.ide.rider@3.0.24/Rider" />
+     <None Include="Assets/Photon/Fusion/Assemblies/Fusion.Common.xml" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources" />
      <None Include="Library/PackageCache/com.unity.modules.assetbundle@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.inputsystem@1.6.3/Tests" />
+     <Folder Include="Assets/Photon/FusionMenu" />
      <Folder Include="Assets/Icons" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/package.json" />
      <None Include="Library/PackageCache/com.unity.modules.imgui@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Graphics" />
+     <None Include="Assets/Photon/Fusion/package.json" />
      <None Include="Library/PackageCache/com.unity.modules.tilemap@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.assetbundle@1.0.0" />
+     <None Include="Assets/Photon/Fusion/Assemblies/Fusion.Sockets.xml" />
      <None Include="Library/PackageCache/com.unity.timeline@1.7.5/package.json" />
      <Folder Include="Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom" />
      <Folder Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials" />
@@ -93,49 +107,66 @@
      <Folder Include="Library/PackageCache/com.unity.ext.nunit@1.0.6/net35" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <None Include="Library/PackageCache/com.unity.modules.terrainphysics@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Android/arm64-v8a" />
      <Folder Include="Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
      <Folder Include="Assets/TextMesh Pro/Resources" />
      <Folder Include="Library/PackageCache/com.unity.modules.screencapture@1.0.0" />
      <None Include="Library/PackageCache/com.unity.visualscripting@1.9.0/package.json" />
      <None Include="Library/PackageCache/com.unity.editorcoroutines@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Android/armeabi-v7a" />
      <None Include="Library/PackageCache/com.unity.timeline@1.7.5/ValidationExceptions.json" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@2.9.3/package.json" />
      <Folder Include="Library/PackageCache/com.unity.timeline@1.7.5" />
      <Folder Include="Library/PackageCache/com.unity.modules.cloth@1.0.0" />
+     <None Include="Assets/Photon/Fusion/Assemblies/Fusion.Runtime.xml" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/PackageConversionData.json" />
      <None Include="Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.feature.development@1.0.1" />
      <Folder Include="Library/PackageCache/com.unity.ext.nunit@1.0.6" />
+     <Folder Include="Assets/Prefabs" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Android/x86" />
      <None Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.18/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Library/PackageCache/com.unity.modules.imageconversion@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.modules.terrainphysics@1.0.0" />
      <None Include="Library/PackageCache/com.unity.modules.imageconversion@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Assemblies" />
      <Folder Include="Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/ValidationExceptions.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0" />
      <None Include="Library/PackageCache/com.unity.feature.development@1.0.1/package.json" />
      <Folder Include="Assets/TextMesh Pro" />
+     <Folder Include="Library/PackageCache/com.unity.nuget.mono-cecil@1.10.2/Tests" />
      <None Include="Library/PackageCache/com.unity.modules.unityanalytics@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Metro/ARM" />
      <Folder Include="Library/PackageCache/com.unity.modules.subsystems@1.0.0" />
      <None Include="Library/PackageCache/com.unity.ide.rider@3.0.24/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Metro" />
      <None Include="Library/PackageCache/com.unity.modules.video@1.0.0/package.json" />
      <None Include="Library/PackageCache/com.unity.test-framework@1.1.33/package.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.unityanalytics@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.modules.physics@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts" />
      <Folder Include="Assets/UI" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/visionOS" />
      <Folder Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime" />
      <Folder Include="Library/PackageCache/com.unity.modules.vr@1.0.0" />
+     <None Include="Library/PackageCache/com.unity.nuget.mono-cecil@1.10.2/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Assemblies/Release" />
      <Folder Include="Library/PackageCache/com.unity.testtools.codecoverage@1.2.4" />
      <Folder Include="Library/PackageCache/com.unity.modules.physics2d@1.0.0" />
      <None Include="Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/package.json" />
+     <None Include="Assets/Photon/Fusion/release_history.txt" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/NanoSockets/Dynamic" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Linux" />
      <Folder Include="Library/PackageCache/com.unity.inputsystem@1.6.3" />
      <None Include="Library/PackageCache/com.unity.modules.particlesystem@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.wind@1.0.0" />
+     <Folder Include="Library/PackageCache/com.unity.nuget.mono-cecil@1.10.2" />
      <None Include="Library/PackageCache/com.unity.modules.physics2d@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Android" />
      <None Include="Library/PackageCache/com.unity.modules.vr@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.uielements@1.0.0" />
      <None Include="Library/PackageCache/com.unity.visualscripting@1.9.0/ValidationExceptions.json" />
@@ -145,18 +176,26 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Library/PackageCache/com.unity.settings-manager@2.0.1" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/NanoSockets/Static" />
      <None Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.18/ValidationExceptions.json" />
      <None Include="Library/PackageCache/com.unity.modules.wind@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Library/PackageCache/com.unity.ugui@1.0.0/Tests" />
+     <None Include="Assets/Photon/PhotonLibs/changes-library.txt" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Windows" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Library/PackageCache/com.unity.modules.umbra@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Textures" />
      <Folder Include="Library/PackageCache/com.unity.modules.tilemap@1.0.0" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Android/x86_64" />
      <Folder Include="Library/PackageCache/com.unity.editorcoroutines@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.modules.ui@1.0.0" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+     <None Include="Assets/Photon/Fusion/Assemblies/Fusion.Realtime.xml" />
+     <Folder Include="Assets/Photon/Fusion/Plugins" />
      <Folder Include="Library/PackageCache/com.unity.modules.androidjni@1.0.0" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Metro/x64" />
      <Folder Include="Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2/Tests" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Library/PackageCache/com.unity.inputsystem@1.6.3/ValidationExceptions.json" />
@@ -173,15 +212,21 @@
      <Folder Include="Library/PackageCache/com.unity.ide.rider@3.0.24" />
      <None Include="Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/iOS" />
      <None Include="Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0/package.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/NanoSockets" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders/TMP_SDF_SSD.cginc" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets" />
      <None Include="Library/PackageCache/com.unity.collab-proxy@2.9.3/ValidationConfig.json" />
      <Folder Include="Library/PackageCache/com.unity.ide.vscode@1.2.5" />
      <Folder Include="Library/PackageCache/com.unity.modules.vehicles@1.0.0" />
      <None Include="Library/PackageCache/com.unity.modules.xr@1.0.0/package.json" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Tests" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders/TMP_Properties.cginc" />
+     <Folder Include="Assets/Photon/PhotonLibs/netstandard2.0" />
+     <Folder Include="Assets/Photon/Fusion/Resources" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders/TMP_SDF Internal Editor.shader" />
+     <Folder Include="Assets/Photon/Fusion/Assemblies/Debug" />
      <Folder Include="Library/PackageCache/com.unity.modules.umbra@1.0.0" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0" />
@@ -190,23 +235,27 @@
      <None Include="Library/PackageCache/com.unity.ide.vscode@1.2.5/ValidationExceptions.json" />
      <Folder Include="Library/PackageCache/com.unity.modules.jsonserialize@1.0.0" />
      <None Include="Library/PackageCache/com.unity.visualscripting@1.9.0/ValidationConfig.json" />
+     <Folder Include="Assets/Photon/Fusion/Plugins/NanoSockets/Metro/ARM64" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Editor Resources/Shaders" />
      <Folder Include="Library/PackageCache/com.unity.modules.director@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.modules.audio@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.settings-manager@2.0.1/Content" />
      <None Include="Library/PackageCache/com.unity.modules.terrain@1.0.0/package.json" />
+     <None Include="Assets/Photon/Fusion/build_info.txt" />
      <Folder Include="Library/PackageCache/com.unity.ide.visualstudio@2.0.18" />
      <None Include="Library/PackageCache/com.unity.modules.androidjni@1.0.0/package.json" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <Folder Include="Library/PackageCache/com.unity.modules.video@1.0.0" />
      <Folder Include="Library/PackageCache/com.unity.modules.ai@1.0.0" />
      <None Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/PackageConversionData_Assets.json" />
+     <Folder Include="Assets/Photon/FusionDemos" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
      <Folder Include="Library/PackageCache/com.unity.textmeshpro@3.0.6/Package Resources" />
      <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <Folder Include="Library/PackageCache/com.unity.modules.terrain@1.0.0" />
      <None Include="Library/PackageCache/com.unity.modules.animation@1.0.0/package.json" />
      <Folder Include="Assets/TextMesh Pro/Documentation" />
+     <Folder Include="Assets/Photon/PhotonLibs" />
      <Folder Include="Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <None Include="Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0/package.json" />
@@ -472,8 +521,35 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>/Users/eimantaslabzentis/3DShooter/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
+     <Reference Include="Fusion.Log">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Assemblies/Fusion.Log.dll</HintPath>
+     </Reference>
+     <Reference Include="websocket-sharp">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+     </Reference>
+     <Reference Include="Fusion.Common">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Assemblies/Fusion.Common.dll</HintPath>
+     </Reference>
+     <Reference Include="NanoSockets">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Plugins/NanoSockets/NanoSockets/Dynamic/NanoSockets.dll</HintPath>
+     </Reference>
+     <Reference Include="Fusion.Sockets">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Assemblies/Fusion.Sockets.dll</HintPath>
+     </Reference>
+     <Reference Include="Fusion.Runtime">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Assemblies/Fusion.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>/Users/eimantaslabzentis/3DShooter/Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Photon3Unity3D">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+     </Reference>
+     <Reference Include="Mono.Cecil">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Library/PackageCache/com.unity.nuget.mono-cecil@1.10.2/Mono.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Fusion.Realtime">
+     <HintPath>/Users/eimantaslabzentis/3DShooter/Assets/Photon/Fusion/Assemblies/Fusion.Realtime.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
@@ -843,6 +919,50 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
+      <Project>{ffa1ca0a-e55e-5f97-4666-c7478a56ea2e}</Project>
+      <Name>Unity.EditorCoroutines.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{2dea0a7b-d32f-8f35-2ad8-5a656732a123}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{22e81095-ddb2-1efe-1b91-7088d34dd747}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{2e94fcc8-ead9-5272-1485-4ff2117446bc}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{293b0c1a-d18d-c43f-204a-8d8cf05ca01a}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{33bf5d4b-9133-4515-a30d-5cb36bb13d49}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{573f5898-4136-c43b-398a-41a775b64f74}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{f312f627-1176-b031-305f-95b5d47aec10}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{1d1f100f-1c8a-c748-6c64-924fbd385cf6}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{5a21af2c-498b-2162-9600-7a02fb684a5b}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{8173a13e-1c4b-5bff-b5fc-e35b1fd1f68c}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{500766e9-bcc5-a279-9f12-c5d8ba4d3edc}</Project>
       <Name>Unity.Timeline</Name>
@@ -858,14 +978,6 @@
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
       <Project>{d0bf9112-daff-6a42-486a-d0b89ce53eb0}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{573f5898-4136-c43b-398a-41a775b64f74}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{ffa1ca0a-e55e-5f97-4666-c7478a56ea2e}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{3723fbe8-2516-20c8-d7cf-9d43ddd21911}</Project>
@@ -891,41 +1003,21 @@
       <Project>{cbfa04cb-5072-6139-9b4f-1043a486b3ad}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{2dea0a7b-d32f-8f35-2ad8-5a656732a123}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{22e81095-ddb2-1efe-1b91-7088d34dd747}</Project>
-      <Name>Unity.VisualScripting.Shared.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{2e94fcc8-ead9-5272-1485-4ff2117446bc}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
+    <ProjectReference Include="Fusion.Unity.csproj">
+      <Project>{d9907d4b-74c9-7bb5-72c4-485e09419c9e}</Project>
+      <Name>Fusion.Unity</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{2bc6e464-cd80-324c-3249-bc2258fa7723}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{33bf5d4b-9133-4515-a30d-5cb36bb13d49}</Project>
-      <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{c7e06021-8397-d69d-bd0c-97a5fc494582}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{293b0c1a-d18d-c43f-204a-8d8cf05ca01a}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{f312f627-1176-b031-305f-95b5d47aec10}</Project>
-      <Name>Unity.VisualScripting.Core.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{1d1f100f-1c8a-c748-6c64-924fbd385cf6}</Project>
-      <Name>Unity.Rider.Editor</Name>
+    <ProjectReference Include="Fusion.Unity.Editor.csproj">
+      <Project>{38e13dda-fff6-0a6d-435d-ca65f775c61e}</Project>
+      <Name>Fusion.Unity.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{0a8b4381-f59a-1e22-af75-572bd97c2d98}</Project>
@@ -934,14 +1026,6 @@
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{2632cefc-687a-2d9a-38ae-52676301e2e2}</Project>
       <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{5a21af2c-498b-2162-9600-7a02fb684a5b}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{8173a13e-1c4b-5bff-b5fc-e35b1fd1f68c}</Project>
-      <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
