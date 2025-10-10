@@ -57,9 +57,6 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -863,7 +860,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: b6b8fb122bb889ca0f8fd60b59cf0201
+      Hash: 7903d2e455a09b90c640f96f072b0244
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerStats

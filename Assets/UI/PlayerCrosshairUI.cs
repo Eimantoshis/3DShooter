@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerCrosshairUI : MonoBehaviour {
 
     [SerializeField] private Image ReloadImage;
+    //[SerializeField] private PlayerShoot playerShoot;
     // Start is called before the first frame update
     void Start() {
         PlayerShoot.Reload += OnReload;

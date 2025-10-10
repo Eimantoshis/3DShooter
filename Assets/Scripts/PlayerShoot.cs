@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using System.Threading.Tasks;
+using Fusion;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerShoot : MonoBehaviour {
+public class PlayerShoot : NetworkBehaviour {
 
     public int maxBullets { get; private set; }
     public int CurrBullets { get; private set; }
@@ -37,8 +38,14 @@ public class PlayerShoot : MonoBehaviour {
                 AmmoChanged?.Invoke(this, new AmmoChangedEventArgs(CurrBullets));
                 if (!playerCamera) Debug.Log("Camera needed");
                 if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, Mathf.Infinity)) {
-                    if (hit.collider.CompareTag("Player")) {
-                        Debug.Log("Hit player");
+                    if (hit.transform.TryGetComponent<PlayerStats>(out var targetStats)) {
+                        if (targetStats != this.GetComponent<PlayerStats>()) {
+                            targetStats.TakeDamageRPC(10f); // send RPC to the target's StateAuthority
+                        }
+                        else {
+                            Debug.Log("Hit myself");
+                        }
+                        
                     }
                 }
 

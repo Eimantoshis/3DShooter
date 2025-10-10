@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c607bc77b97d248d6bae9aa032275ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  _Health: 100
 --- !u!114 &6049076643016315609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,8 +485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a67b49131524c83b7b959a9761f7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Playercamera: {fileID: 0}
-  reloadInput: {fileID: -3110001207042791450, guid: 93f1725b0f93b4595a45ad1edbf644dd, type: 3}
 --- !u!114 &-5442888267100446981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +502,8 @@ MonoBehaviour:
   Flags: 262145
   NestedObjects: []
   NetworkedBehaviours:
+  - {fileID: 6678369653268252705}
+  - {fileID: 6049076643016315609}
   - {fileID: 3457129205757749072}
   - {fileID: 2454569522392519475}
   ForceRemoteRenderTimeframe: 0
@@ -875,6 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 105406814838436003}
+  playerStats: {fileID: 6678369653268252705}
 --- !u!1 &5911708709098559777
 GameObject:
   m_ObjectHideFlags: 0
